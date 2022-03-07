@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Key Frame</title>
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 60px;
+            background-color: red;
+            position: relative;
+            color: #fff;
+            text-align: center;
+            padding-top: 40px;
+            animation-name: Practice;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes Practice {
+            0% {
+                background-color: red;
+                left: 200px;
+                top: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background-color: yellow;
+                left: 400px;
+                top: 0px;
+                transform: rotate(90deg);
+            }
+
+            50% {
+                background-color: blue;
+                left: 400px;
+                top: 200px;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                background-color: green;
+                left: 200px;
+                top: 200px;
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background-color: red;
+                left: 200px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello</div>
+</body>
+
+</html>
