@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Focus-Blur-KeyPress-KeyUp_JQuery</title>
+
+    <!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#TxtFocus").focus(function () {
+                $(this).css("background-color", "blue");
+            });
+            $("#TxtBlur").blur(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#KeyPress").keypress(function () {
+                alert($(this).val());
+            });
+            $("#KeyUp").keyup(function () {
+                alert($(this).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="TxtFocus" placeholder="Check Text Box Focus Event..." />
+    <hr />
+    <input type="text" id="TxtBlur" placeholder="Check Text Box Blur Event..." />
+    <hr />
+    <input type="text" id="KeyPress" placeholder="Press Key For Key Press Event..." />
+    <hr />
+    <input type="text" id="KeyUp" placeholder="Press Key For Key Up Event..." />
+    <hr />
+</body>
+
+</html>
