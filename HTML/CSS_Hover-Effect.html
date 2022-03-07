@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Hover Effect</title>
+    <Style type="text/css">
+        #Main li ul li {
+            display: none;
+        }
+
+        #Main li:hover ul li {
+            display: block;
+        }
+
+        #Main li:hover ul li ol li {
+            display: none;
+        }
+
+        #Main li:hover ul li:hover ol li {
+            display: block;
+        }
+
+        #Main li:hover ul li:hover ol li ul li {
+            display: none;
+        }
+
+        #Main li:hover ul li:hover ol li:hover ul li {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="Main">
+        <li>Google
+            <ul>
+                <li>Gmail
+                    <ol>
+                        <li>Sign In</li>
+                        <li>Sign Up
+                            <ul>
+                                <li>Admin</li>
+                                <li>Member</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>Google Drive</li>
+                <li>YouTube</li>
+            </ul>
+        </li>
+        <li>Amazon</li>
+        <li>Facebook</li>
+    </ul>
+</body>
+
+</html>
