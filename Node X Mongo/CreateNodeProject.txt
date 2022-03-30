@@ -1,0 +1,3 @@
+1) Create seprate folder for project.
+2) npm init - To generate the package.json file.
+3) npm install [--NAME OF PACKAGE--] - To download the node packages.
