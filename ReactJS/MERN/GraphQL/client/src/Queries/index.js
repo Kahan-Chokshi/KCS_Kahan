@@ -1,6 +1,5 @@
 import { gql } from 'apollo-boost';
 
-//Mutations allow you to modify server-side data, and it also returns an object based on the operation performed. It can be used to insert, update, or delete data. Dgraph automatically generates GraphQL mutations for each type that you define in your schema
 export const GET_USERS = gql`
   {
     getUsers {
