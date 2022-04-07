@@ -1,9 +1,4 @@
 import React from 'react';
-
-// Time to execute our TRACKS query from React! To do that, we'll use Apollo Client's useQuery hook in src/pages/tracks. js . 
-// The useQuery React hook is the primary API for executing queries in an Apollo application. 
-
-// Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL
 import { useQuery } from '@apollo/react-hooks';
 import { GET_USERS, VIEW_USERS } from "./Queries";
 import { Card, CardBody, CardHeader, CardSubtitle, Spinner } from 'reactstrap';
